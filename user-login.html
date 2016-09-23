@@ -38,18 +38,12 @@
   <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
   <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-  
+
+  <link rel="stylesheet" href="js/plugins/dropify/css/dropify.min.css">
+
 </head>
 
 <body class="cyan">
-  <!-- Start Page Loading -->
-  <div id="loader-wrapper">
-      <div id="loader"></div>        
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-  </div>
-  <!-- End Page Loading -->
-
 
 
   <div id="login-page" class="row">
@@ -82,6 +76,15 @@
           </div>
         </div>-->
         <div class="row">
+
+          <div class="input-field col s12">
+            <a id="scan" href="#modal2" class="modal-trigger btn waves-effect waves-light col s12">Сканировать</a>
+          </div>
+
+          <div class="input-field col s12">
+            <a id="file" href="#modal3" class="modal-trigger btn waves-effect waves-light col s12">Загрузить документ</a>
+          </div>
+
           <div class="input-field col s12">
             <a href="index.html" class="btn waves-effect waves-light col s12">Войти</a>
           </div>
@@ -102,6 +105,106 @@
 
 
 
+        <div id="modal2" class="modal modal-fixed-footer" style="min-height: 700px; margin-top: -50px;">
+          <div class="modal-content">
+
+
+            <div class="row">
+
+              <div class="col l12">
+
+                <h5>Для начала сканирования выберите сканер</h5>
+
+                <br>
+                <select>
+                  <option value="" disabled selected>Выберите сканер</option>
+                  <option value="1">HP 250</option>
+                  <option value="2">Epson 444</option>
+                  <option value="3">Canon 555</option>
+                </select>
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+            <div class="row">
+
+              <div class="col l12">
+
+                <a href="javascript:;" class="modal-trigger btn waves-effect waves-light col s12">Начать сканирование</a>
+
+
+              </div>
+
+
+            </div>
+
+
+            <div class="row">
+              <div class="col l12">
+
+
+                <div class="card-panel">
+
+
+                    <img src="images/scan.png" alt="пример скан. документа" width="600" height="900" style="margin-left: 80px">
+
+
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Отмена</a>
+            <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Сохранить</a>
+          </div>
+        </div>
+
+  <div id="modal3" class="modal modal-fixed-footer">
+    <div class="modal-content">
+
+
+
+
+
+      <div class="row">
+        <div class="col l12">
+
+
+          <input type="file" id="input-file-now-custom-2" class="dropify" data-height="390" />
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Отмена</a>
+      <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Сохранить</a>
+    </div>
+  </div>
 
 
   <!-- ================================================
@@ -116,6 +219,8 @@
   <script type="text/javascript" src="js/plugins/prism/prism.js"></script>
   <!--scrollbar-->
   <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+  <script type="text/javascript" src="js/plugins/dropify/js/dropify.min.js"></script>
 
       <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="js/plugins.min.js"></script>
